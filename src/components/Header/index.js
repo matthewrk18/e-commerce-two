@@ -21,7 +21,7 @@ const Header = props => {
       <div className="wrap">
         <div className="logo">
           <Link to="/">
-            <h1>Store</h1>
+            <h1>Gifts</h1>
           </Link>
         </div>
 
@@ -29,6 +29,11 @@ const Header = props => {
 
           {currentUser && (
             <ul>
+              <li>
+                <Link to="/search">
+                    Search
+                </Link>
+              </li>
               <li>
                 <Link to="/dashboard">
                   My Account
@@ -44,6 +49,11 @@ const Header = props => {
 
           {!currentUser && (
             <ul>
+              <li>
+                <Link to="/search">
+                  Search
+                </Link>
+              </li>
               <li>
                 <Link to="/registration">
                   Register
