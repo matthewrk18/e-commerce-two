@@ -21,9 +21,24 @@ const Header = props => {
       <div className="wrap">
         <div className="logo">
           <Link to="/">
-            <h1>Gifts</h1>
+            <h1>Store</h1>
           </Link>
         </div>
+
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/search">
+                Search
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
         <div className="callToActions">
 

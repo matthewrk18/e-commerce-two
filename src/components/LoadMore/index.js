@@ -5,7 +5,9 @@ const LoadMore = ({
     onLoadMoreEvt = () => { },
 }) => {
     return (
-        <h1></h1>
+        <Button onClick={() => onLoadMoreEvt()}>
+            Load More
+        </Button>
     );
 };
 
